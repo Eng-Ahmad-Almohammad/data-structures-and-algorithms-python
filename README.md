@@ -3,7 +3,8 @@
 |Challenge No. | Name of challenge|
 |:---------: |:--------------:|
 |1|[Reverse an Array](data_structures_and_algorithms/challenges/array_reverse/array_reverse.py)
-|1|[Reverse an Array](data_structures_and_algorithms/challenges/array_reverse/array_reverse.py)
+|2|[Shift an Array](data_structures_and_algorithms/challenges/array_shift/array_shift.py)
+|3|[Binary Search ](data_structures_and_algorithms/challenges/array_binary_search/array_binary_search.py)
 
 
 
@@ -35,3 +36,20 @@ I will split the array to two array  and append the new value the first part and
 ## Solution
 <!-- Embedded whiteboard image -->
 ![image](assets/challemge02.jpg)
+
+
+
+
+# Binary Search 
+
+<!-- Short summary or background information -->
+I should creat a function take two arrguments sorted array and key value and return the index of value inside the array and equal the value of key and retirn -1 if it does not exsit.
+## Challenge Description
+<!-- Description of the challenge -->
+I should creat a function take two arrguments sorted array and key value and return the index of value inside the array and equal the value of key and retirn -1 if it does not exsit.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I will loop over the array and declare a variable and this variable will increase when the key not equal the value and when find the value it will return the variable value.
+## Solution
+<!-- Embedded whiteboard image -->
+![image](assets/Binary_search.jpg)
