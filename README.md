@@ -49,7 +49,7 @@ I should creat a function take two arrguments sorted array and key value and ret
 I should creat a function take two arrguments sorted array and key value and return the index of value inside the array and equal the value of key and retirn -1 if it does not exsit.
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-I will loop over the array and declare a variable and this variable will increase when the key not equal the value and when find the value it will return the variable value.
+I will compare between the mid value inside the array and the key then I will specify if it is in the left of right then compare with the middle of the half..etc
 ## Solution
 <!-- Embedded whiteboard image -->
 ![image](assets/Binary_search.jpg)
