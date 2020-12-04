@@ -5,6 +5,7 @@
 |1|[Reverse an Array](data_structures_and_algorithms/challenges/array_reverse/array_reverse.py)
 |2|[Shift an Array](data_structures_and_algorithms/challenges/array_shift/array_shift.py)
 |3|[Binary Search ](data_structures_and_algorithms/challenges/array_binary_search/array_binary_search.py)
+|5|[Linked List ](data_structures_and_algorithms/data_structures/linked_list/linked_list.py)
 
 
 
@@ -53,3 +54,23 @@ I will compare between the mid value inside the array and the key then I will sp
 ## Solution
 <!-- Embedded whiteboard image -->
 ![image](assets/Binary_search.jpg)
+
+
+
+# Singly Linked List
+<!-- Short summary or background information -->
+A Linked List is a sequence of Nodes that are connected/linked to each other. The most defining feature of a Linked List is that each Node references the next Node in the link.
+
+## Challenge
+<!-- Description of the challenge -->
+I should create a method to insert in the Head of a linked list and another method to find if the value exsist in the linked list and all of that without using any build-in method.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I used the classes to create a linked list or to insert a new value to it, in addition to find if a spsefic value exsist or not.
+my class was O(1)
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
+For insert method I created a new Node and then assigned the head to the next value after that I but the head on my new Node.
+For includes method I assigned the head to the current to make sure that i am starting from the beginning then I will loop over the content and return True if it exsist and False if it is not exsist.
