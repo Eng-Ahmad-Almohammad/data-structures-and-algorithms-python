@@ -25,11 +25,23 @@ def test_includes(prep_tt):
 def test_str(prep_tt):
     assert str(prep_tt) == f'{{7}}->{{5}}->NULL'
 
+def test_insert_before(prep_tt):
+    prep_tt.insert_before(5,9)
+    assert prep_tt.head.value == 7
+    assert prep_tt.head.next.value == 9
+    assert prep_tt.head.next.next.value == 5
 
+def test_insert_after(prep_tt):
+    prep_tt.insert_after(5,9)
+    assert prep_tt.head.value == 7
+    assert prep_tt.head.next.value == 5
+    assert prep_tt.head.next.next.value == 9
 
 @pytest.fixture
 def prep_tt():
     tt = LinkedList()
     tt.insert(5)
     tt.insert(7)
+    
     return tt
+
