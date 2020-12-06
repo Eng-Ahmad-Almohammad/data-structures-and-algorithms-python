@@ -74,3 +74,24 @@ my class was O(1)
 <!-- Description of each method publicly available to your Linked List -->
 For insert method I created a new Node and then assigned the head to the next value after that I but the head on my new Node.
 For includes method I assigned the head to the current to make sure that i am starting from the beginning then I will loop over the content and return True if it exsist and False if it is not exsist.
+
+
+
+# Linked list 
+<!-- Short summary or background information -->
+A Linked List is a sequence of Nodes that are connected/linked to each other. The most defining feature of a Linked List is that each Node references the next Node in the link.
+## Challenge Description
+<!-- Description of the challenge -->
+I should to create three methods one to append in the end of the linked list and one to insert before a specific value and the last one to append after a specific value
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+For appending in the end I will loop over the list then I will stop on the last value in the list then add my new node
+
+For inserting before a value I will loop over the linked list and I will stop on the previous target value and I will append the value of the node for its next value and pointing the new node to the target value.
+
+for inserting after a value it the same of inserting before but insted of stoping on previous node I will stop on the target value
+
+Big O for this is O(1)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/l6ziM3FAemgdqMsZHMqXmLMOaxUHJG3sooELkmBlW1O7qy8Q1vFKtaYi9EUmkEgi
