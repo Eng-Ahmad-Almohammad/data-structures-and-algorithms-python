@@ -37,6 +37,35 @@ def test_insert_after(prep_tt):
     assert prep_tt.head.next.value == 5
     assert prep_tt.head.next.next.value == 9
 
+def test_kth_from_end_if_k_greter_than_the_length(prep_tt):
+    actual = prep_tt.kth_from_end(12)
+    expected = 'Your variable is larger than the list length'
+    assert actual==expected
+
+def test_kth_from_end_if_k_is_equal_to_length(prep_tt):
+    actual =  prep_tt.kth_from_end(1)
+    expected = 7
+    assert actual== expected
+
+def test_kth_from_end_if_k_is_negative(prep_tt):
+    actual = prep_tt.kth_from_end(-3)
+    expected = 'You should input postive value'
+    assert actual==expected
+
+def test_kth_from_end_when_linked_list_length_is_one():
+    tt = LinkedList()
+    tt.insert(5)
+    assert tt.kth_from_end(0)==5
+
+def test_kth_from_end(prep_tt):
+    actual = prep_tt.kth_from_end(1)
+    expected = 7
+    assert actual==expected
+
+
+
+
+
 @pytest.fixture
 def prep_tt():
     tt = LinkedList()
