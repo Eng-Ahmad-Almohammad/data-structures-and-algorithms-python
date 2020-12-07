@@ -95,3 +95,20 @@ Big O for this is O(1)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/l6ziM3FAemgdqMsZHMqXmLMOaxUHJG3sooELkmBlW1O7qy8Q1vFKtaYi9EUmkEgi
+
+
+
+# Linked list 
+<!-- Short summary or background information -->
+A Linked List is a sequence of Nodes that are connected/linked to each other. The most defining feature of a Linked List is that each Node references the next Node in the link.
+## Challenge Description
+<!-- Description of the challenge -->
+I should to create a method take k as argument and return the value of the node that have k index but reverse 
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I will loop over the list to get its length then I will subtract the k from the length then I will loop over the list until arrive to the node which have the subtraction value index
+
+Big O for this is O(2n)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/1oPMXT0QE5fxxAfjJ8p3iVbJmp9TxWY8Q0DBrVWLIJKSi9NbGZts0xslegJOHV76
