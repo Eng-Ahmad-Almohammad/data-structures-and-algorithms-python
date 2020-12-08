@@ -6,6 +6,8 @@
 |2|[Shift an Array](data_structures_and_algorithms/challenges/array_shift/array_shift.py)
 |3|[Binary Search ](data_structures_and_algorithms/challenges/array_binary_search/array_binary_search.py)
 |5|[Linked List ](data_structures_and_algorithms/data_structures/linked_list/linked_list.py)
+|8|[ll-zip ](data_structures_and_algorithms/challenges/ll_zip/ll_zip.py)
+
 
 
 
