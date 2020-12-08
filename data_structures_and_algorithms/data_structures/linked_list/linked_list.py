@@ -86,6 +86,7 @@ class LinkedList:
             if current == None:
                 raise ValueError(f'{value} it is not founded')
 
+    
     def kth_from_end(self, k):
         if k >= 0:
             if self.head == None:
@@ -101,9 +102,7 @@ class LinkedList:
                 if i-1 < k:
                     return('Your variable is larger than the list length')
 
-                elif k == i:
-                    return current.value
-
+               
                 else:
                     index = i - k 
                     current = self.head
@@ -118,6 +117,8 @@ class LinkedList:
         else:
             return('You should input postive value')
 
+
+    
 
 
     def __str__(self):
@@ -140,4 +141,4 @@ if __name__ == "__main__":
     ll.insert_before(2, 9)
     ll.insert(8)
     print(ll)
-    print(ll.kth_from_end(4))
+    print(ll.kth_from_end(0))
