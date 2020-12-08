@@ -112,3 +112,22 @@ Big O for this is O(2n)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/1oPMXT0QE5fxxAfjJ8p3iVbJmp9TxWY8Q0DBrVWLIJKSi9NbGZts0xslegJOHV76
+
+
+
+
+# ll-zip
+<!-- Short summary or background information -->
+It is ordring the lists item in new list 
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function called zipLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Creating a new list and taking the items from another lists then returning anew list 
+O(n) 
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/Am0PG3pApIrnaozuwY3q5Ib68j55GtGJb84UrhqJlm2XhVhYcAgsf9XkIB0mlcFa
+
+For the tests there was something wrong with importing
