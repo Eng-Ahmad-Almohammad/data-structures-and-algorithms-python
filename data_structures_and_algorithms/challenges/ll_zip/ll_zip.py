@@ -20,6 +20,15 @@ def zipLists(list1, list2):
     return list3
 
 
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     ll1 = LinkedList()
     ll1.append(5)
