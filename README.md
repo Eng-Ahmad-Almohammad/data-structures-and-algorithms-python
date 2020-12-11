@@ -7,6 +7,8 @@
 |3|[Binary Search ](data_structures_and_algorithms/challenges/array_binary_search/array_binary_search.py)
 |5|[Linked List ](data_structures_and_algorithms/data_structures/linked_list/linked_list.py)
 |8|[ll-zip ](data_structures_and_algorithms/challenges/ll_zip/ll_zip.py)
+|10|[Stack and Queue ](data_structures/stacks_and_queues/stacks_and_queues.py)
+
 
 
 
