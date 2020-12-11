@@ -132,3 +132,57 @@ O(n)
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/Am0PG3pApIrnaozuwY3q5Ib68j55GtGJb84UrhqJlm2XhVhYcAgsf9XkIB0mlcFa
 
+
+
+
+
+# Stacks and Queues
+<!-- Short summary or background information -->
+Stack and Queue is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
+
+## Challenge
+<!-- Description of the challenge -->
+For stack:
+Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+
+This object should be aware of a default empty value assigned to top when the stack is created.
+
+Define a method called push which takes any value as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance.
+
+Define a method called pop that does not take any argument, removes the node from the top of the stack, and returns the node’s value. Should raise exception when called on empty stack.
+
+Define a method called peek that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack. Should raise exception when called on empty stack.
+
+Define a method called isEmpty that takes no argument, and returns a boolean indicating whether or not the stack is empty.
+
+For Queue:
+Create a Queue class that has a front property. It creates an empty Queue when instantiated.
+
+This object should be aware of a default empty value assigned to front when the queue is created.
+
+Define a method called enqueue which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
+
+Define a method called dequeue that does not take any argument, removes the node from the front of the queue, and returns the node’s value. Should raise exception when called on empty queue.
+
+Define a method called peek that does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue. Should raise exception when called on empty queue.
+
+Define a method called isEmpty that takes no argument, and returns a boolean indicating whether or not the queue is empty.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+For stack every node pointing to the next node and the last one called the top which I can append any new node for it and put it as top. Big O is O(1)
+
+For queue evry node pointing to the next node and the first node called front and last one called rear so I can easily enqueue and dequeue. Big O is O(1)
+## API
+<!-- Description of each method publicly available to your Stack and Queue-->
+For stack:
+push: it will push a node to the top of the stack.
+pop: it will remove the the top of the stack and return its value
+peek: it will return the value of the top without removing it from stack
+is_empty : it will return a boolean telling you if the stack is empty 
+
+For queue:
+enqueue: it will push a node to the rear of the queue.
+dequeue: it will remove the the front of the queue and return its value
+peek: it will return the value of the front without removing it from queue
+is_empty : it will return a boolean telling you if the queue is empty 
