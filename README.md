@@ -8,7 +8,7 @@
 |5|[Linked List ](data_structures_and_algorithms/data_structures/linked_list/linked_list.py)
 |8|[ll-zip ](data_structures_and_algorithms/challenges/ll_zip/ll_zip.py)
 |10|[Stack and Queue ](data_structures_and_algorithms/data_structures/stacks_and_queues/stacks_and_queues.py)
-
+|11|[Queue using two Stacks ](data_structures_and_algorithms/challenges/queue_with_stacks/queue_with_stacks.py)
 
 
 
@@ -188,3 +188,20 @@ enqueue: it will push a node to the rear of the queue.
 dequeue: it will remove the the front of the queue and return its value
 peek: it will return the value of the front without removing it from queue
 is_empty : it will return a boolean telling you if the queue is empty 
+
+
+
+
+# Queue using two Stacks
+<!-- Short summary or background information -->
+Stack and Queue is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
+## Challenge Description
+<!-- Description of the challenge -->
+I should to create a class which have two stacks as inistances and it should have a enqueue method and dequeue method.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I will push the new items inside first stacks that for enqueue and for dequeue I will loop over first stack and pop all its item and push them inside the second stack.
+Big O is O(n)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/To5rgivtB9nKE2Kmm5hAvs9q0o4gWUA8sLBIRjbibD2xPgWPzi06qxgo7CtdG1Cx
