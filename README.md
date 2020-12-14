@@ -9,6 +9,7 @@
 |8|[ll-zip ](data_structures_and_algorithms/challenges/ll_zip/ll_zip.py)
 |10|[Stack and Queue ](data_structures_and_algorithms/data_structures/stacks_and_queues/stacks_and_queues.py)
 |11|[Queue using two Stacks ](data_structures_and_algorithms/challenges/queue_with_stacks/queue_with_stacks.py)
+|12|[fifo_animal_shelter ](data_structures_and_algorithms/challenges/fifo_animal_shelter/fifo_animal_shelter.py)
 
 
 
@@ -205,3 +206,20 @@ Big O is O(n)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/To5rgivtB9nKE2Kmm5hAvs9q0o4gWUA8sLBIRjbibD2xPgWPzi06qxgo7CtdG1Cx
+
+
+
+# fifo_animal_shelter
+<!-- Short summary or background information -->
+Stack and Queue is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
+
+## Challenge
+<!-- Description of the challenge -->
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I will check first item if it is like pref I will return it but if not I will loop to find it and take its value and skip it
+## API
+<!-- Description of each method publicly available to your Stack and Queue-->
+enqueue will add a cat or dog inside the queue
+dequeue will return the first cat or dog find it related to pref and if pref was None so it will return the first pet.
