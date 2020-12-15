@@ -10,6 +10,7 @@
 |10|[Stack and Queue ](data_structures_and_algorithms/data_structures/stacks_and_queues/stacks_and_queues.py)
 |11|[Queue using two Stacks ](data_structures_and_algorithms/challenges/queue_with_stacks/queue_with_stacks.py)
 |12|[fifo_animal_shelter ](data_structures_and_algorithms/challenges/fifo_animal_shelter/fifo_animal_shelter.py)
+|13|[Bracket Validation ](data_structures_and_algorithms/challenges/multi_bracket_validation/multi_bracket_validation.py)
 
 
 
@@ -223,3 +224,20 @@ I will check first item if it is like pref I will return it but if not I will lo
 <!-- Description of each method publicly available to your Stack and Queue-->
 enqueue will add a cat or dog inside the queue
 dequeue will return the first cat or dog find it related to pref and if pref was None so it will return the first pet.
+
+
+
+
+
+# Bracket Validation
+<!-- Short summary or background information -->
+Checking brackets is one of mort important checking in programming languages which can make uxpected errors or results
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function to validate the brackets
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Loop over string and check if its an open brackets then push it to the stack else if it is close bracket get its index and then get the open bracket with same index and compare it with last value inside the stack
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/hy0zRjyAtT0Ou3rLufOP7t4QLGwqd48lxu0f7tfxVYgAObUqctUIOfsdMQFjfLsS
