@@ -11,6 +11,7 @@
 |11|[Queue using two Stacks ](data_structures_and_algorithms/challenges/queue_with_stacks/queue_with_stacks.py)
 |12|[fifo_animal_shelter ](data_structures_and_algorithms/challenges/fifo_animal_shelter/fifo_animal_shelter.py)
 |13|[Bracket Validation ](data_structures_and_algorithms/challenges/multi_bracket_validation/multi_bracket_validation.py)
+|15|[Tree ](data_structures_and_algorithms/data_structures/tree/tree.py)
 
 
 
@@ -241,3 +242,22 @@ Loop over string and check if its an open brackets then push it to the stack els
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/hy0zRjyAtT0Ou3rLufOP7t4QLGwqd48lxu0f7tfxVYgAObUqctUIOfsdMQFjfLsS
+
+
+
+
+# Trees
+<!-- Short summary or background information -->
+I am using here Binary Tree where each node have only two or less children
+
+## Challenge
+<!-- Description of the challenge -->
+Crete two classes one to traverse during a tree and the second one to add and find a value
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+In this two classes I use recursion eather for traversing or for adding and checking 
+the Big O for the two classes is log(n)
+## API
+<!-- Description of each method publicly available in each of your trees -->
+I created a class called BinaryTree which travers during the tree with three methods preOrder(root ==> left ==> right) or inOrder(left ==> root ==> right) or postOrder(left ==> right ==> root)
+There is another class called BinarySearchTree where you can use add() method to create your tree and if you want to chack if the tree have a spesific value you can use contains() method
