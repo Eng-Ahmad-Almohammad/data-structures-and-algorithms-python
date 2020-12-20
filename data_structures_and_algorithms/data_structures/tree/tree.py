@@ -50,7 +50,21 @@ class BinaryTree:
         _walk(node)
         return self.output
 
+    def find_maximum_value(self):
+        self.x = self.root.data
+        node = self.root
 
+        def _walk(node):
+            if self.x < node.data:
+                self.x = node.data
+            
+            if node.left:
+                _walk(node.left)
+            if node.right:
+                _walk(node.right)
+
+        _walk(node)
+        return self.x
 
 class BinarySearchTree(BinaryTree):
     def add(self,value):
@@ -120,26 +134,26 @@ class BinarySearchTree(BinaryTree):
 
     
 if __name__ == "__main__":
-    # bt = BinaryTree()
-    # bt.root = Node('A')
-    # bt.root.right = Node('C')
-    # bt.root.left = Node('B')
-    # bt.root.right.left = Node('F')
-    # bt.root.left.left = Node('D')
-    # bt.root.left.right = Node('E')
-    # print(bt.postOrder())
-    bst = BinarySearchTree()
-    bst.add(4)
-    bst.add(9)
-    bst.add(-1)
-    bst.add(6)
-    bst.add(3)
-    bst.add(8)
-    bst.add(5)
-    print(bst.contains('sdfkz'))
-    assert bst.root.data == 4
-    assert bst.root.left.data == -1
-    assert bst.root.right.data == 9
-    assert bst.root.left.right.data == 3
-    assert bst.root.right.left.left.data == 5
-    print('=====All passed======')
+    bt = BinaryTree()
+    bt.root = Node(4)
+    bt.root.right = Node(9)
+    bt.root.left = Node(-1)
+    bt.root.right.left = Node(6)
+    bt.root.left.left = Node(3)
+    bt.root.left.right = Node(8)
+    print(bt.find_maximum_value())
+    # bst = BinarySearchTree()
+    # bst.add(4)
+    # bst.add(9)
+    # bst.add(-1)
+    # bst.add(6)
+    # bst.add(3)
+    # bst.add(8)
+    # bst.add(5)
+    # print(bst.contains('sdfkz'))
+    # assert bt.root.data == 4
+    # assert bt.root.left.data == -1
+    # assert bt.root.right.data == 9
+    # assert bt.root.left.right.data == 3
+    # assert bt.root.right.left.left.data == 5
+    # print('=====All passed======')

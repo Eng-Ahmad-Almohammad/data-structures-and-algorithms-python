@@ -33,6 +33,21 @@ def test_postOrder(prep):
     
     assert prep.postOrder() == [1,10,5]
 
+
+
+def test_maximum_value():
+    bt = BinaryTree()
+    bt.root = Node(4)
+    bt.root.right = Node(9)
+    bt.root.left = Node(-1)
+    bt.root.right.left = Node(6)
+    bt.root.left.left = Node(3)
+    bt.root.left.right = Node(8)
+    assert bt.find_maximum_value() == 9
+
+
+
+
 @pytest.fixture
 def prep():
     bts = BinarySearchTree()
