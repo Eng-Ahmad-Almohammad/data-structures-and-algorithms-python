@@ -261,3 +261,17 @@ the Big O for the two classes is log(n)
 <!-- Description of each method publicly available in each of your trees -->
 I created a class called BinaryTree which travers during the tree with three methods preOrder(root ==> left ==> right) or inOrder(left ==> root ==> right) or postOrder(left ==> right ==> root)
 There is another class called BinarySearchTree where you can use add() method to create your tree and if you want to chack if the tree have a spesific value you can use contains() method
+
+
+# Find maximum value in a tree 
+<!-- Short summary or background information -->
+I am using here Binary Tree where each node have only two or less children
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function to return maximum value inside the tree
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I used recursion using preorder method tho go thorght the tree and compare each value with a varibale where I gave it first time the root value and then it will change if it find larger data
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/LN13ANWem6KOOvvRpJpAwiLJ31Gaf27cOs5E5h9sdQFFZ978Y0pzcEIpwGrfjGgo
