@@ -67,14 +67,16 @@ class Queue:
         self.rear = None
 
     def enqueue(self,data):
-        new_node= Node(data)
-        if self.rear:
-            self.rear.next = new_node
-            self.rear = new_node
-        else:
-            self.front = new_node
-            self.rear = new_node
-
+        try:
+            new_node= Node(data)
+            if self.rear:
+                self.rear.next = new_node
+                self.rear = new_node
+            else:
+                self.front = new_node
+                self.rear = new_node
+        except:
+            raise Exception('an error')
     def dequeue(self):
         try:
             temp = self.front
