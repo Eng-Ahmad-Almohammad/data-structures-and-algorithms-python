@@ -275,3 +275,18 @@ I used recursion using preorder method tho go thorght the tree and compare each 
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/LN13ANWem6KOOvvRpJpAwiLJ31Gaf27cOs5E5h9sdQFFZ978Y0pzcEIpwGrfjGgo
+
+
+# Breadth first search 
+<!-- Short summary or background information -->
+I am using here Binary Tree where each node have only two or less children
+## Challenge Description
+<!-- Description of the challenge -->
+Write a breadth first traversal method which takes a Binary Tree as its unique input.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I used queue rules to enqueue the node every time and dequeue it 
+Big O: O(n)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/cAXXlnEtMJ4jaOYO4vURfAUmSdUN7EREpUktDUcQKICAyXpG8OwIwMLX1YLNsiFZ

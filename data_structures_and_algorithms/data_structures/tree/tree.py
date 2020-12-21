@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self,data):
         self.data = data
@@ -66,6 +67,30 @@ class BinaryTree:
         _walk(node)
         return self.x
 
+
+    def breadth_first(self):
+        self.queue = [self.root]
+        self.output = []
+        
+        while len(self.queue) > 0:
+            front_node = self.queue.pop(0)
+            self.output +=[front_node.data]
+            if front_node.left:
+                self.queue+=[front_node.left]
+            if front_node.right:
+               
+                self.queue+=[front_node.right]
+
+        return self.output
+
+
+
+
+
+
+
+
+
 class BinarySearchTree(BinaryTree):
     def add(self,value):
         new_node = Node(value)
@@ -122,26 +147,22 @@ class BinarySearchTree(BinaryTree):
             return "ValueError"
 
 
-            
-            
-
-
-
-
-
-
 
 
     
 if __name__ == "__main__":
     bt = BinaryTree()
-    bt.root = Node(4)
-    bt.root.right = Node(9)
-    bt.root.left = Node(-1)
-    bt.root.right.left = Node(6)
-    bt.root.left.left = Node(3)
-    bt.root.left.right = Node(8)
+    bt.root = Node(2)
+    bt.root.right = Node(5)
+    bt.root.left = Node(7)
+    bt.root.left.left = Node(2)
+    bt.root.left.right = Node(6)
+    bt.root.left.right.left = Node(5)
+    bt.root.left.right.right = Node(11)
+    bt.root.right.right = Node(9)
+    bt.root.right.right.left = Node(4)
     print(bt.find_maximum_value())
+    print(bt.breadth_first())
     # bst = BinarySearchTree()
     # bst.add(4)
     # bst.add(9)
