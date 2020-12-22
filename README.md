@@ -12,6 +12,7 @@
 |12|[fifo_animal_shelter ](data_structures_and_algorithms/challenges/fifo_animal_shelter/fifo_animal_shelter.py)
 |13|[Bracket Validation ](data_structures_and_algorithms/challenges/multi_bracket_validation/multi_bracket_validation.py)
 |15|[Tree ](data_structures_and_algorithms/data_structures/tree/tree.py)
+|18|[FizzBuzzTree ](data_structures_and_algorithms/challenges/fizz_buzz_tree/fizz_buzz_tree.py)
 
 
 
@@ -290,3 +291,21 @@ Big O: O(n)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/cAXXlnEtMJ4jaOYO4vURfAUmSdUN7EREpUktDUcQKICAyXpG8OwIwMLX1YLNsiFZ
+
+
+# Fizz Buzz Tree
+<!-- Short summary or background information -->
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- If the value is not divisible by 3 or 5, simply turn the number into a String.
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function called FizzBuzzTree which takes a k-ary tree as an argument. And great new tree with fizz buzz rules
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I used the preOrder to go throwght the tree and and get fuizz buzz values.
+Big O: O(n)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/CU6RXpxmyFNGVzICbppFd8VhIww6TkYPbfuMhOXnkjI0HHKQeIJJRMvzLtEqo4A7
