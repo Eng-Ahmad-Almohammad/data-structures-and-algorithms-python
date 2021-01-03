@@ -13,6 +13,8 @@
 |13|[Bracket Validation ](data_structures_and_algorithms/challenges/multi_bracket_validation/multi_bracket_validation.py)
 |15|[Tree ](data_structures_and_algorithms/data_structures/tree/tree.py)
 |18|[FizzBuzzTree ](data_structures_and_algorithms/challenges/fizz_buzz_tree/fizz_buzz_tree.py)
+|26|[Insertion Sort ](data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)
+
 
 
 
@@ -309,3 +311,28 @@ Big O: O(n)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/CU6RXpxmyFNGVzICbppFd8VhIww6TkYPbfuMhOXnkjI0HHKQeIJJRMvzLtEqo4A7
+
+
+
+# Insertion Sort
+<!-- Short summary or background information -->
+It is the method that check the current value and next value 
+## Challenge Description
+<!-- Description of the challenge -->
+Sorting a list ascending
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- looping over each value in array
+
+2- check the next value for the current one
+
+3- if the next value is less than the current value swap them 
+
+big O:
+
+time: O(2^n)
+
+space = O(1)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/EkuehYRIyzPhKnh74FS7uImzcaackvyL7H5rxmmfRZqMcvrtK4Ow9fmCyI6hpHHZ
