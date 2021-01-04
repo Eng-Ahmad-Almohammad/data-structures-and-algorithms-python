@@ -14,7 +14,7 @@
 |15|[Tree ](data_structures_and_algorithms/data_structures/tree/tree.py)
 |18|[FizzBuzzTree ](data_structures_and_algorithms/challenges/fizz_buzz_tree/fizz_buzz_tree.py)
 |26|[Insertion Sort ](data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)
-
+|26|[Merge Sort ](data_structures_and_algorithms/challenges/merge_sort/merge_sort.py)
 
 
 
