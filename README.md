@@ -336,3 +336,32 @@ space = O(1)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/EkuehYRIyzPhKnh74FS7uImzcaackvyL7H5rxmmfRZqMcvrtK4Ow9fmCyI6hpHHZ
+
+
+
+# Merge Sort
+<!-- Short summary or background information -->
+It is method will devide the list until you have just tow or less elements then will sort the sublist
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function to sort a list using merge sort algorithm
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- Find the middle point to divide the array into two halves.
+
+2- call the function again for the first half
+
+3- call the function again for the second half
+
+4- when you have an array with just tow elements or less sort it
+
+5- Merge the halves with each others.
+
+Big O:
+
+time: O(nlogn)
+
+space: O(1)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/klX1v2Sy6F7DjgY6lqutKldbjLL3j12ORCDvV7hWGj4BrpLYYxbUoh5npbhIHb0Y
