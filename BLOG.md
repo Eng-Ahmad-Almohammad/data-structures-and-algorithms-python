@@ -31,3 +31,16 @@ Step 12: sort the second half of the right half and merge them
 Step 13: sort the parts of the right half and merge them
 
 Step 14: sort the parts of the origin list and merge them
+
+
+
+
+
+# Quick Sort
+![image](assets/quick-sort.PNG)
+
+First it will check all values with 15 and any value is less than 15 will be at first positions and then will put the 15 in it's right place
+
+second it will sort the left side which they are less than 15 so here it will compare 4 with 8 and it will sort this part
+
+third it will sort the right part of the array where it will compare all values with 23 and you will get sorted array

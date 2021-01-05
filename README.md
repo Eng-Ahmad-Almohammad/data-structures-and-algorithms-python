@@ -14,7 +14,9 @@
 |15|[Tree ](data_structures_and_algorithms/data_structures/tree/tree.py)
 |18|[FizzBuzzTree ](data_structures_and_algorithms/challenges/fizz_buzz_tree/fizz_buzz_tree.py)
 |26|[Insertion Sort ](data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)
-|26|[Merge Sort ](data_structures_and_algorithms/challenges/merge_sort/merge_sort.py)
+|27|[Merge Sort ](data_structures_and_algorithms/challenges/merge_sort/merge_sort.py)
+|28|[Quick Sort ](data_structures_and_algorithms/challenges/quick_sort/quick_sort.py)
+
 
 
 
@@ -341,7 +343,7 @@ https://miro.com/welcomeonboard/EkuehYRIyzPhKnh74FS7uImzcaackvyL7H5rxmmfRZqMcvrt
 
 # Merge Sort
 <!-- Short summary or background information -->
-It is method will devide the list until you have just tow or less elements then will sort the sublist
+This method will devide the list until you have just tow or less elements then will sort the sublist
 ## Challenge Description
 <!-- Description of the challenge -->
 Write a function to sort a list using merge sort algorithm
@@ -365,3 +367,28 @@ space: O(1)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/klX1v2Sy6F7DjgY6lqutKldbjLL3j12ORCDvV7hWGj4BrpLYYxbUoh5npbhIHb0Y
+
+
+
+# Quick Sort
+<!-- Short summary or background information -->
+This method will put last value in it is right position and put all values which are smaller than it in the left of it.
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function to sort a list using quick sort algorithm
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- declare a variable and make it equal to returning value from position function
+
+2- define position function which will take a list and first index and final index and will put the last element in it's correct position and will out all values which are smaller than last value before it
+
+3- recursive the quick sort function again
+
+Big O:
+
+time: O(nlogn)
+
+space: O(1)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/KVqN9MkNLKV4ayDipPyaY6K45V4WUiEUvr4nAEcfXU8cKsKEGbc7s9axVpPe4dCK
