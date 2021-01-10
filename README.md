@@ -16,6 +16,8 @@
 |26|[Insertion Sort ](data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)
 |27|[Merge Sort ](data_structures_and_algorithms/challenges/merge_sort/merge_sort.py)
 |28|[Quick Sort ](data_structures_and_algorithms/challenges/quick_sort/quick_sort.py)
+|30|[Hahstable ](data_structures_and_algorithms/data_structures/hashtable/hashtable.py)
+|31|[Repeated Word ](data_structures_and_algorithms/challenges/repeated_word/repeated_word.py)
 
 
 
@@ -392,3 +394,57 @@ space: O(1)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/KVqN9MkNLKV4ayDipPyaY6K45V4WUiEUvr4nAEcfXU8cKsKEGbc7s9axVpPe4dCK
+
+
+
+
+
+# Hashtables
+<!-- Short summary or background information -->
+Hashing is a technique that is used to uniquely identify a specific object from a group of similar objects. Some examples of how hashing is used in our lives include:
+
+- In universities, each student is assigned a unique roll number that can be used to retrieve information about them.
+- In libraries, each book is assigned a unique number that can be used to determine information about the book, such as its exact position in the library or the users it has been issued to etc.
+## Challenge
+<!-- Description of the challenge -->
+Implement a Hashtable with the following methods:
+
+- add: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
+- get: takes in the key and returns the value from the table.
+- contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
+- hash: takes in an arbitrary key and returns an index in the collection.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I will create a list but I will give the user an opportunity to chose it size for the position of the key/value pair I will find the sum of the ASCII code for all key's characters and I will multiply it by 11 and find the its mod for the size and then I will creat a Linked List object and added the pair as Linked Lisst object using this way I will solve the collision problem.
+Big O:
+Time: O(1).
+space: O(1).
+## API
+<!-- Description of each method publicly available in each of your hashtable -->
+Add method will take a key and value and add them to the map list as Linked List object.
+Get method will take a key and return the key value.
+Contains will take a key and will return a boolean indication if the key exists or not.
+
+
+# Repeated Word
+<!-- Short summary or background information -->
+Search for the first rpeated word
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function that accepts a lengthy string parameter and return return the first word to occur more than once in that provided string.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- I will use regex to get all words in the string as a list
+
+2- I will loop over the list and compare the value with new list items
+
+3- If it did not find any same word in the new list so it will append this word
+
+Big O:
+
+time: O(n^2)
+
+space: O(1)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/fOC6d2DqlrIrJbegrh2GVCDT5bnv69kRSODe9OIkO480Pl43xuQZGH0twrMdMEcP
