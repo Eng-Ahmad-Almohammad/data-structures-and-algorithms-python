@@ -18,6 +18,7 @@
 |28|[Quick Sort ](data_structures_and_algorithms/challenges/quick_sort/quick_sort.py)
 |30|[Hahstable ](data_structures_and_algorithms/data_structures/hashtable/hashtable.py)
 |31|[Repeated Word ](data_structures_and_algorithms/challenges/repeated_word/repeated_word.py)
+|32|[Tree Intersection ](data_structures_and_algorithms/challenges/tree_intersection/tree_intersection.py)
 
 
 
@@ -448,3 +449,35 @@ space: O(1)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/fOC6d2DqlrIrJbegrh2GVCDT5bnv69kRSODe9OIkO480Pl43xuQZGH0twrMdMEcP
+
+
+
+
+
+
+# Tree Intersection
+<!-- Short summary or background information -->
+Tree is type of data structure which has root and chaildren and the chaildren have chaildren until you arrive to leaf which does not has chaildren
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function called tree_intersection that takes two binary tree parameters and return a set of values found in both trees.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- Traverse over the trees and append their items value to two lists one for each tree and change one of the lists to set
+
+2- loop over the first list and compare each element with all elements in the second list
+
+3- if you find any similar value append it to output list
+
+4- return output list
+
+Big O:
+
+time: O(n)
+
+space: O(1)
+
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/qOIuuCJe55FhlfHOqMZBRNwQc4bPMjm1yMsNwMNxKKDRNfGVufykkiExOccnWthP
