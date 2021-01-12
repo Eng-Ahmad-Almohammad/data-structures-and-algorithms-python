@@ -96,6 +96,6 @@ if __name__ == '__main__':
     print(things.get('cloud'))
     print(things.contains('could'))
     print(things.contains('hadi'))
-   
+    print(things.map)
     
     
