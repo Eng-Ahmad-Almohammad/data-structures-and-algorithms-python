@@ -19,6 +19,7 @@
 |30|[Hahstable ](data_structures_and_algorithms/data_structures/hashtable/hashtable.py)
 |31|[Repeated Word ](data_structures_and_algorithms/challenges/repeated_word/repeated_word.py)
 |32|[Tree Intersection ](data_structures_and_algorithms/challenges/tree_intersection/tree_intersection.py)
+|33|[Left Join ](data_structures_and_algorithms/challenges/left_join/left_join.py)
 
 
 
@@ -481,3 +482,33 @@ space: O(1)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/qOIuuCJe55FhlfHOqMZBRNwQc4bPMjm1yMsNwMNxKKDRNfGVufykkiExOccnWthP
+
+
+
+
+# Left Join
+<!-- Short summary or background information -->
+The SQL LEFT JOIN returns all rows from the left table, even if there are no matches in the right table. This means that if the ON clause matches 0 (zero) records in the right table; the join will still return a row in the result, but with NULL in each column from the right table.
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function that LEFT JOINs two hashmaps into a single data structure.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- Loop over the first hashmap
+
+2- declare a variable to save the key value
+
+3- check if the key exist in the second hashmap and save it value
+
+4- append the key and the two values
+
+Big O:
+
+time: O(n)
+
+space: O(n)
+
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/U31OYHjkBAJzHKtGZNB0Ar6EQfd7I3FQERHEm3bjcdg2Ih6FmOFi8L3dvnR8gwJd
