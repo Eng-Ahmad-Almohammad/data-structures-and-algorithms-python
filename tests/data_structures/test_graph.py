@@ -16,7 +16,7 @@ def test_get_neighbors(graph_test):
 
 
 def test_size(graph_test):
-    actual = graph_test.size('a')
+    actual = graph_test.size()
     expect = 4
     assert actual == expect
 
@@ -26,7 +26,7 @@ def test_graph_with_one_node():
     graph = Graph()
     assert graph.add_node('a') == 'a'
     assert graph.get_neighbors('a') == []
-    assert graph.size('a') == 1
+    assert graph.size() == 1
     assert graph.get_neighbors('v') == 'Node does not exist'
 
 
