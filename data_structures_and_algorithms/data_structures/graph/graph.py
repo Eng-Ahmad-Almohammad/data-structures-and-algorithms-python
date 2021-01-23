@@ -72,7 +72,9 @@ class Graph:
 
 
 
-    def size(self, first_node):
+    def size(self):
+        first_node = list(self.adjacency.keys())[0].value
+
         if self.bft(first_node):
             return len(self.bft(first_node))
         else:
@@ -128,5 +130,5 @@ if __name__=='__main__':
     graph.add_edge('d','c',6)
     print(graph.get_nodes('a'))
     print(graph.get_neighbors('a'))
-    print(graph.size('a'))
+    print(graph.size())
     print(graph.get_neighbors('v'))
