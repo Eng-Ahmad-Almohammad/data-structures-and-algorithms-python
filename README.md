@@ -20,6 +20,7 @@
 |31|[Repeated Word ](data_structures_and_algorithms/challenges/repeated_word/repeated_word.py)
 |32|[Tree Intersection ](data_structures_and_algorithms/challenges/tree_intersection/tree_intersection.py)
 |33|[Left Join ](data_structures_and_algorithms/challenges/left_join/left_join.py)
+|35|[Graph ](data_structures_and_algorithms/data_structures/graph/graph.py)
 
 
 
@@ -512,3 +513,56 @@ space: O(n)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/U31OYHjkBAJzHKtGZNB0Ar6EQfd7I3FQERHEm3bjcdg2Ih6FmOFi8L3dvnR8gwJd
+
+
+
+# Graphs
+<!-- Short summary or background information -->
+A graph is a non-linear data structure that can be looked at as a collection of vertices (or nodes) potentially connected by line segments named edges.
+## Challenge
+<!-- Description of the challenge -->
+The graph should be represented as an adjacency list, and should include the following methods:
+
+AddNode()
+- Adds a new node to the graph
+- Takes in the value of that node
+- Returns the added node
+AddEdge()
+- Adds a new edge between two nodes in the graph
+- Include the ability to have a “weight”
+- Takes in the two nodes to be connected by the edge
+- - Both nodes should already be in the Graph
+GetNodes()
+- Returns all of the nodes in the graph as a collection (set, list, or similar)
+GetNeighbors()
+- Returns a collection of edges connected to the given node
+- Takes in a given node
+- Include the weight of the connection in the returned collection
+Size()
+- Returns the total number of nodes in the graph
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I represent the graph as a dic and the key has a list of lists where the child list has two values the value of connected list and the weight of the edge
+
+Big O:
+Time: O(n^2)
+Space: O(n)
+## API
+<!-- Description of each method publicly available in your Graph -->
+AddNode()
+- Adds a new node to the graph
+- Takes in the value of that node
+- Returns the added node
+AddEdge()
+- Adds a new edge between two nodes in the graph
+- Include the ability to have a “weight”
+- Takes in the two nodes to be connected by the edge
+- - Both nodes should already be in the Graph
+GetNodes()
+- Returns all of the nodes in the graph as a collection (set, list, or similar)
+GetNeighbors()
+- Returns a collection of edges connected to the given node
+- Takes in a given node
+- Include the weight of the connection in the returned collection
+Size()
+- Returns the total number of nodes in the graph
