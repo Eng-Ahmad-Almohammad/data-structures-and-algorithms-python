@@ -107,8 +107,29 @@ class Graph:
                         queue.append(n[1])
                         nodes.add(n[1])
             else:
-                return False
+                return []
         return nodes
+
+    def check_edge(self , first_node , second_node):
+        graph_nodes = self.bft(first_node)
+        flag = False
+        for i in graph_nodes:
+            if i == second_node:
+                flag = True
+
+        if flag:
+            for i in self.adjacency.keys():
+                if str(i.value) == str(first_node):
+                
+                   if len(self.adjacency[i]) > 0:
+                       for j in self.adjacency[i]:
+                           if j[1] == second_node:
+                               return True
+                else:
+                
+                    continue
+        return False
+
 
 
         
@@ -132,3 +153,4 @@ if __name__=='__main__':
     print(graph.get_neighbors('a'))
     print(graph.size())
     print(graph.get_neighbors('v'))
+    print(graph.check_edge(7,1))

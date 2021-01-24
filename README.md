@@ -566,3 +566,31 @@ GetNeighbors()
 - Include the weight of the connection in the returned collection
 Size()
 - Returns the total number of nodes in the graph
+
+
+
+# BreadthFirst for graph
+<!-- Short summary or background information -->
+In a breadth first traversal, you are starting at a specific vertex/node. This node must be specified when calling the BreadthFirst() method. The breadth-first traversal of a graph is like that of a tree, with the exception that graphs can have cycles.
+## Challenge Description
+<!-- Description of the challenge -->
+Extend your graph object with a breadth-first traversal method that accepts a starting node.
+ define a new method that accepts two nodes as input and uses your traversal algorithm to determine if a path exists between the two nodes. 
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- define a function which take 2 parameters as inputs
+
+2- call the breadth first method to get all nodes in the graph
+
+3- check if the 2 nodes are in the same graph
+
+4- check if there is any connection between the 2 nodes
+
+Big O:
+
+Time: O(n^2)
+
+space: O(n^2)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/XBMMYMIMWTijyufg8y9b2NqHNrgbev2IHt0k9eJ9gxMwijbvO80vGStLXGxjhID5
