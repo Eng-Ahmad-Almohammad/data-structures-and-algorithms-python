@@ -29,6 +29,12 @@ def test_graph_with_one_node():
     assert graph.size() == 1
     assert graph.get_neighbors('v') == 'Node does not exist'
 
+def test_check_edges(graph_test):
+    assert graph_test.check_edge('d','r') == False
+    assert graph_test.check_edge(1,7) == False
+    assert graph_test.check_edge('d','a') == True
+
+
 
 @pytest.fixture
 def graph_test():
