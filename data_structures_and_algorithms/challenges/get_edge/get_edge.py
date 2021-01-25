@@ -21,6 +21,8 @@ def get_edge(graph,cities):
     return [False,'$0']
 
 if __name__=='__main__':
+
+    
     graph = Graph()
     graph.add_node('a')
     graph.add_node('b')
