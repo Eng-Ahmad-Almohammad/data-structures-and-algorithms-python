@@ -21,6 +21,7 @@
 |32|[Tree Intersection ](data_structures_and_algorithms/challenges/tree_intersection/tree_intersection.py)
 |33|[Left Join ](data_structures_and_algorithms/challenges/left_join/left_join.py)
 |35|[Graph ](data_structures_and_algorithms/data_structures/graph/graph.py)
+|42|[Get Edge ](data_structures_and_algorithms/challenges/get_edge/get_edge.py)
 
 
 
@@ -594,3 +595,28 @@ space: O(n^2)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/XBMMYMIMWTijyufg8y9b2NqHNrgbev2IHt0k9eJ9gxMwijbvO80vGStLXGxjhID5
+
+
+
+# Get Edge for city
+<!-- Short summary or background information -->
+A graph is a non-linear data structure that can be looked at as a collection of vertices (or nodes) potentially connected by line segments named edges.
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function based on the specifications above, which takes in a graph, and an array of city names.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- define a function which take 2 parameters as inputs
+
+2- check if the 2 nodes are in the same graph
+
+3- check if there is any connection between the 2 nodes
+
+Big O:
+
+Time: O(n^2)
+
+space: O(n^2)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/OOcMpAgFQGRn49pcPniwlU2B4NKFodBZFJj4M5WWISnft9YuGPragRCUgyrjveZT
