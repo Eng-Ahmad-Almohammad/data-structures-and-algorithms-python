@@ -22,6 +22,7 @@
 |33|[Left Join ](data_structures_and_algorithms/challenges/left_join/left_join.py)
 |35|[Graph ](data_structures_and_algorithms/data_structures/graph/graph.py)
 |42|[Get Edge ](data_structures_and_algorithms/challenges/get_edge/get_edge.py)
+|43|[Depth first ](data_structures_and_algorithms/challenges/depth_first/depth_first.py)
 
 
 
@@ -620,3 +621,30 @@ space: O(n^2)
 ## Solution
 <!-- Embedded whiteboard image -->
 https://miro.com/welcomeonboard/OOcMpAgFQGRn49pcPniwlU2B4NKFodBZFJj4M5WWISnft9YuGPragRCUgyrjveZT
+
+
+
+
+# Depth First
+<!-- Short summary or background information -->
+In a depth first traversal, we approach it a bit different than the way we do when working with a depth first traversal of a tree. Similar to how the breadth-first uses a queue, we are going to use a Stack for our depth-first traversal.
+## Challenge Description
+<!-- Description of the challenge -->
+Create a function that accepts an adjacency list as a graph, and conducts a depth first traversal.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1- Push the root node into the stack
+2- Start a while loop while the stack is not empty
+3- Peek at the top node in the stack
+4- If the top node has unvisited children, mark the top node as visited, and then Push any unvisited children back into the stack.
+5- If the top node does not have any unvisited children, Pop that node off the stack
+6- repeat until the stack is empty.
+
+Big O:
+
+Time: O(n^3)
+
+space: O(1)
+## Solution
+<!-- Embedded whiteboard image -->
+https://miro.com/welcomeonboard/RAzPJyYhUdtYlwJKpqn931TqmHa85m6FhE5B6ze6sJjeV7hffpRVbSrfYV2wk0XD
