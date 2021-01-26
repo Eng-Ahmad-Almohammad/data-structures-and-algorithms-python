@@ -11,7 +11,7 @@ class Graph:
     def add_node(self ,value):
         node = Node(value)
         self.adjacency[node] = []
-        return node.value
+        return node
 
     
     def add_edge(self, first_node, second_node, weight=1):
